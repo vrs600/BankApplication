@@ -19,6 +19,15 @@ namespace BankApplication
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
+            btnDeposit.Enabled = false;
+        }
+
+        private void txtAccNo_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtBxBalance_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

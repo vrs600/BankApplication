@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             txtAccName = new TextBox();
             txtAccNo = new TextBox();
             label1 = new Label();
@@ -61,6 +62,7 @@
             txtAccNo.Name = "txtAccNo";
             txtAccNo.Size = new Size(158, 23);
             txtAccNo.TabIndex = 1;
+            txtAccNo.TextChanged += txtAccNo_TextChanged;
             // 
             // label1
             // 
@@ -122,6 +124,7 @@
             txtBxBalance.Name = "txtBxBalance";
             txtBxBalance.Size = new Size(158, 23);
             txtBxBalance.TabIndex = 2;
+            txtBxBalance.TextChanged += txtBxBalance_TextChanged;
             // 
             // groupBox2
             // 
@@ -200,6 +203,7 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Form1";
             groupBox1.ResumeLayout(false);
